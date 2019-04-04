@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\IeC {\'I}ndice general}{1}{Doc-Start}
+\contentsline {section}{\numberline {1}Enunciado}{2}{section.1}
+\contentsline {section}{\numberline {2}Modelado de la puerta OR}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}\textbf {Modelo}}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}\textbf {Tablas}}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}\textbf {Demostraciones}}{3}{subsection.2.3}
+\contentsline {section}{\numberline {3}Otros modelos canonicos}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}\textbf {Noisy-AND}}{3}{subsection.3.1}

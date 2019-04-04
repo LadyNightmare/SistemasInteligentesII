@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network3" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Alergia">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Resfriado">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Gato">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Crisis_alergica">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Alergia Gato</parents>
+			<probabilities>0.99 0.01000000000000001 0.1 0.9 0.1 0.9 0.0001 0.9999</probabilities>
+		</cpt>
+		<cpt id="Estornudos">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Resfriado Crisis_alergica</parents>
+			<probabilities>0.99 0.01000000000000001 0.7 0.3 0.99 0.01000000000000001 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Ara_azos">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Gato</parents>
+			<probabilities>0.9 0.09999999999999998 0.001 0.999</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3828.0 ACADEMIC" name="Ej3" faultnameformat="nodestate">
+			<node id="Alergia">
+				<name>Alergia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>502 176 549 205</position>
+			</node>
+			<node id="Estornudos">
+				<name>Estornudos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>487 387 555 429</position>
+			</node>
+			<node id="Resfriado">
+				<name>Resfriado</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>349 269 408 305</position>
+			</node>
+			<node id="Ara_azos">
+				<name>Arañazos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>678 266 737 302</position>
+			</node>
+			<node id="Gato">
+				<name>Gato</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>651 178 692 203</position>
+			</node>
+			<node id="Crisis_alergica">
+				<name>Crisis alergica</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>554 285 633 334</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

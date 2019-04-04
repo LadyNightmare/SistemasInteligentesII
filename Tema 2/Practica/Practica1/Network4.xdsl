@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network4" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Elegir_puerta">
+			<state id="A" />
+			<state id="B" />
+			<state id="C" />
+			<probabilities>0.3333333333333333 0.333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="Abrir_puerta">
+			<state id="A" />
+			<state id="B" />
+			<state id="C" />
+			<parents>Elegir_puerta</parents>
+			<probabilities>0 1 0 1 0 0 0.5 0.5 0</probabilities>
+		</cpt>
+		<cpt id="Puerta_Ganadora">
+			<state id="A" />
+			<state id="B" />
+			<state id="C" />
+			<parents>Elegir_puerta Abrir_puerta</parents>
+			<probabilities>0 0.5 0.5 0.5 0 0.5 0.5 0.5 0 0 0.5 0.5 0.5 0 0.5 0.5 0.5 0 0 0.5 0.5 0.5 0 0.5 0.5 0.5 0</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3828.0 ACADEMIC" name="Ej4" faultnameformat="nodestate">
+			<node id="Elegir_puerta">
+				<name>Elegir puerta</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>579 213 651 258</position>
+			</node>
+			<node id="Abrir_puerta">
+				<name>Abrir puerta</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>467 281 535 323</position>
+			</node>
+			<node id="Puerta_Ganadora">
+				<name>Puerta Ganadora</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>583 367 677 425</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

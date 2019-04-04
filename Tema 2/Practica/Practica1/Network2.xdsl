@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network2" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Tipo_de_animal">
+			<state id="Wurro" />
+			<state id="Hobexa" />
+			<state id="Wacka" />
+			<probabilities>0.33333333333333 0.333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="Color">
+			<state id="Azul" />
+			<state id="Rojo" />
+			<parents>Tipo_de_animal</parents>
+			<probabilities>0 1 0.5 0.5 0.8 0.2</probabilities>
+		</cpt>
+		<cpt id="Tipo_de_piel">
+			<state id="PeludaSuave" />
+			<state id="Escamosa" />
+			<parents>Tipo_de_animal</parents>
+			<probabilities>1 0 0 1 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Numero_de_patas">
+			<state id="Cuatro" />
+			<state id="Cinco" />
+			<state id="Seis" />
+			<parents>Tipo_de_animal</parents>
+			<probabilities>0 0.5 0.5 0.333333333333333 0.33333333333333 0.333333333333333 0.5 0.5 0</probabilities>
+		</cpt>
+		<cpt id="Cojear">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Numero_de_patas</parents>
+			<probabilities>0.1 0.9 1 0 0.2 0.8</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3828.0 ACADEMIC" name="Ej2" faultnameformat="nodestate">
+			<node id="Tipo_de_animal">
+				<name>Tipo de animal</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>552 131 633 181</position>
+			</node>
+			<node id="Color">
+				<name>Color</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>785 268 828 294</position>
+			</node>
+			<node id="Tipo_de_piel">
+				<name>Tipo de piel</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>611 274 677 315</position>
+			</node>
+			<node id="Numero_de_patas">
+				<name>Numero de patas</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>329 269 423 327</position>
+			</node>
+			<node id="Cojear">
+				<name>Cojear</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>384 423 431 452</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network4" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Accidente_de_trafico">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Contusiones">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Accidente_de_trafico</parents>
+			<probabilities>0.9 0.09999999999999998 0.2 0.8</probabilities>
+		</cpt>
+		<cpt id="Dolor">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Contusiones</parents>
+			<probabilities>0.9 0.09999999999999998 0.2 0.8</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3828.0 ACADEMIC" name="Cabeza-con-cola" faultnameformat="nodestate">
+			<node id="Accidente_de_trafico">
+				<name>Accidente de trafico</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>282 42 387 107</position>
+				<barchart active="true" />
+			</node>
+			<node id="Contusiones">
+				<name>Contusiones</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>298 145 370 190</position>
+				<barchart active="true" />
+			</node>
+			<node id="Dolor">
+				<name>Dolor</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>313 236 356 262</position>
+				<barchart active="true" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

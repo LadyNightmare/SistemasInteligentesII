@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network5" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Robo">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Coche_de_Maria_en_el_taller">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Llamada_telefonica">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Maria_coge_el_coche">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Coche_de_Maria_en_el_taller Llamada_telefonica</parents>
+			<probabilities>0.99 0.01000000000000001 0.6 0.4 0.2 0.8 0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Coche_en_paradero_desconocido">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Robo Maria_coge_el_coche</parents>
+			<probabilities>0.99 0.01000000000000001 0.9 0.09999999999999998 0.9 0.09999999999999998 0.1 0.9</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3828.0 ACADEMIC" name="Ej5" faultnameformat="nodestate">
+			<node id="Robo">
+				<name>Robo</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>305 271 348 297</position>
+			</node>
+			<node id="Maria_coge_el_coche">
+				<name>Maria coge el coche</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>559 273 666 339</position>
+			</node>
+			<node id="Coche_en_paradero_desconocido">
+				<name>Coche en paradero desconocido</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>420 381 515 440</position>
+			</node>
+			<node id="Coche_de_Maria_en_el_taller">
+				<name>Coche de Maria en el taller</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>449 186 537 241</position>
+			</node>
+			<node id="Llamada_telefonica">
+				<name>Llamada telefonica</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>683 192 783 254</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

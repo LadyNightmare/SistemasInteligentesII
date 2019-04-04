@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Unnamed" numsamples="1000" discsamples="10000">
+	<nodes>
+		<cpt id="Gato">
+			<state id="no" />
+			<state id="si" />
+			<probabilities>0.9835 0.0165</probabilities>
+		</cpt>
+		<cpt id="Aranazos">
+			<state id="no" />
+			<state id="si" />
+			<parents>Gato</parents>
+			<probabilities>0.8202338586680223 0.1797661413319776 0.1333333333333333 0.8666666666666667</probabilities>
+		</cpt>
+		<cpt id="Alergia">
+			<state id="no" />
+			<state id="si" />
+			<probabilities>0.5605 0.4395</probabilities>
+		</cpt>
+		<cpt id="Rintis">
+			<state id="no" />
+			<state id="si" />
+			<parents>Alergia Gato</parents>
+			<probabilities>0.9479506710192238 0.0520493289807762 0.8351648351648352 0.1648351648351649 0.9030317056236983 0.09696829437630179 0.02702702702702703 0.972972972972973</probabilities>
+		</cpt>
+		<cpt id="Resfriado">
+			<state id="no" />
+			<state id="si" />
+			<probabilities>0.7973 0.2027</probabilities>
+		</cpt>
+		<cpt id="Estornudos">
+			<state id="no" />
+			<state id="si" />
+			<parents>Rintis Resfriado</parents>
+			<probabilities>0.9878531458987309 0.01214685410126928 0.1409574468085106 0.8590425531914894 0.1068111455108359 0.8931888544891642 0.006802721088435374 0.9931972789115646</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3828.0 ACADEMIC" name="luis" faultnameformat="nodestate">
+			<node id="Gato">
+				<name>Gato</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>96 38 168 86</position>
+			</node>
+			<node id="Aranazos">
+				<name>Aranazos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>1 103 73 151</position>
+			</node>
+			<node id="Alergia">
+				<name>Alergia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>256 36 328 84</position>
+			</node>
+			<node id="Rintis">
+				<name>Rintis</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>194 102 266 150</position>
+			</node>
+			<node id="Resfriado">
+				<name>Resfriado</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>88 129 160 177</position>
+			</node>
+			<node id="Estornudos">
+				<name>Estornudos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>141 230 213 278</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

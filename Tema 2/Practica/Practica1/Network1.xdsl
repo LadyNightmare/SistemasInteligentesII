@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network1" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Resfriado">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Mocos">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Resfriado</parents>
+			<probabilities>0.99 0.01 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Indigestion">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Dieta_con_gluten">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Antecedentes_de_celiaquia">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Celiaco">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Antecedentes_de_celiaquia</parents>
+			<probabilities>0.75 0.25 0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Celiaquia">
+			<state id="Crisis" />
+			<state id="NoCrisis" />
+			<parents>Dieta_con_gluten Celiaco</parents>
+			<probabilities>0.95 0.05 0.01 0.99 0.01 0.99 0.01 0.99</probabilities>
+		</cpt>
+		<cpt id="Vomito">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Mocos Indigestion Celiaquia</parents>
+			<probabilities>0.999 0.001000000000000001 0.99 0.01000000000000001 0.99 0.01000000000000001 0.9 0.09999999999999998 0.99 0.01000000000000001 0.9 0.09999999999999998 0.9 0.09999999999999998 0.01 0.99</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3828.0 ACADEMIC" name="Ej1" faultnameformat="nodestate">
+			<node id="Vomito">
+				<name>Vomito</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>526 395 573 424</position>
+			</node>
+			<node id="Indigestion">
+				<name>Indigestion</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>486 250 550 290</position>
+			</node>
+			<node id="Mocos">
+				<name>Mocos</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>357 261 404 290</position>
+			</node>
+			<node id="Celiaco">
+				<name>Celiaco</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>717 198 767 229</position>
+			</node>
+			<node id="Celiaquia">
+				<name>Celiaquia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>643 271 700 306</position>
+			</node>
+			<node id="Dieta_con_gluten">
+				<name>Dieta con gluten</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>584 192 672 247</position>
+			</node>
+			<node id="Antecedentes_de_celiaquia">
+				<name>Antecedentes de celiaquia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>768 122 881 175</position>
+			</node>
+			<node id="Resfriado">
+				<name>Resfriado</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>301 185 360 221</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>

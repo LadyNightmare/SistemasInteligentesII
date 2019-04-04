@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="Network7" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Distraccion">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Sustancias__Drogas_">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Cansancio">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Capacidad_mermada">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Sustancias__Drogas_ Cansancio</parents>
+			<probabilities>0.99 0.01 0.8 0.2 0.8 0.2 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Error_humano">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Distraccion Capacidad_mermada</parents>
+			<probabilities>0.99 0.01000000000000001 0.8 0.2 0.8 0.2 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Sustancias_vertidas">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Condiciones_atmosfericas">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Carretera_resbaladiza">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Sustancias_vertidas Condiciones_atmosfericas</parents>
+			<probabilities>0.99 0.01000000000000001 0.8 0.2 0.8 0.2 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Fallo_mecanico">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Exceso_de_velocidad">
+			<state id="Si" />
+			<state id="No" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="Perdida_de_control">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Error_humano Carretera_resbaladiza Fallo_mecanico Exceso_de_velocidad</parents>
+			<probabilities>0.9999 9.999999999998899e-05 0.999 0.001000000000000001 0.999 0.001000000000000001 0.99 0.01000000000000001 0.999 0.001000000000000001 0.99 0.01000000000000001 0.99 0.01000000000000001 0.9 0.09999999999999998 0.999 0.001000000000000001 0.99 0.01000000000000001 0.99 0.01000000000000001 0.9 0.09999999999999998 0.99 0.01000000000000001 0.9 0.09999999999999998 0.9 0.09999999999999998 0.1 0.9</probabilities>
+		</cpt>
+		<cpt id="Accidente_de_trafico">
+			<state id="Si" />
+			<state id="No" />
+			<parents>Perdida_de_control</parents>
+			<probabilities>0.99 0.01000000000000001 0.01 0.99</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3828.0 ACADEMIC" name="Ej7" faultnameformat="nodestate">
+			<node id="Accidente_de_trafico">
+				<name>Accidente de trafico</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>499 496 604 561</position>
+			</node>
+			<node id="Perdida_de_control">
+				<name>Perdida de control</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>496 392 594 453</position>
+			</node>
+			<node id="Error_humano">
+				<name>Error humano</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>259 275 336 323</position>
+			</node>
+			<node id="Carretera_resbaladiza">
+				<name>Carretera resbaladiza</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>404 270 487 308</position>
+			</node>
+			<node id="Fallo_mecanico">
+				<name>Fallo mecanico</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>549 268 632 319</position>
+			</node>
+			<node id="Exceso_de_velocidad">
+				<name>Exceso de velocidad</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>676 276 760 328</position>
+			</node>
+			<node id="Distraccion">
+				<name>Distraccion</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>123 193 189 234</position>
+			</node>
+			<node id="Capacidad_mermada">
+				<name>Capacidad mermada</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>254 183 329 229</position>
+			</node>
+			<node id="Sustancias__Drogas_">
+				<name>Sustancias (Drogas)</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>205 95 281 142</position>
+			</node>
+			<node id="Cansancio">
+				<name>Cansancio</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>327 95 391 135</position>
+			</node>
+			<node id="Sustancias_vertidas">
+				<name>Sustancias vertidas</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>370 157 475 222</position>
+			</node>
+			<node id="Condiciones_atmosfericas">
+				<name>Condiciones atmosfericas</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000000" name="Arial" size="8" />
+				<position>496 178 579 229</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
