@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}
+\contentsline {section}{\IeC {\'I}ndice general}{1}{Doc-Start}
+\contentsline {section}{\numberline {1}Enunciado}{2}{section.1}
+\contentsline {section}{\numberline {2}\textbf {Ejercicio 1}}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Soluci\IeC {\'o}n}{2}{subsection.2.1}
+\contentsline {section}{\numberline {3}\textbf {Ejercicio 2}}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Soluci\IeC {\'o}n}{3}{subsection.3.1}
+\contentsline {section}{\numberline {4}\textbf {Ejercicio Opcional}}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}Soluci\IeC {\'o}n}{10}{subsection.4.1}
